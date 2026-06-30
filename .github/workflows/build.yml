@@ -25,6 +25,12 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Fix permissions
+        run: |
+          chmod +x build.sh utils.sh build-termux.sh
+          find bin -type f -exec chmod +x {} \;
+          find module -type f \( -name "*.sh" -o -path "*/bin/*" \) -exec chmod +x {} \;
+
       - name: Update config
         if: ${{ inputs.from_ci }}
         run: |
