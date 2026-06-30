@@ -1,0 +1,96 @@
+enable-module-update = true # set this to false if you do not want to receive updates for the module
+parallel-jobs = 1
+
+# add 'enabled = false' for not patching a specific app or remove it from the config
+# see CONFIG.md for more detailed explanations
+
+[YouTube]
+app-name = "YouTube"
+patches-source = "inotia00/patches"
+cli-source = "inotia00/rvx-cli"
+rv-brand = "YouTube Black"
+build-mode = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+version = "20.51.39"
+included-patches = """
+  Alternative thumbnails
+  Ambient mode control
+  Bypass URL redirects
+  Bypass image region restrictions
+  Change form factor
+  Change player flyout menu toggles
+  Change share sheet
+  Change start page
+  Custom Shorts action buttons
+  Custom branding icon for YouTube
+  Custom branding name for YouTube
+  Custom double tap length
+  Custom header for YouTube
+  Description components
+  Disable QUIC protocol
+  Disable forced auto audio tracks
+  Disable forced auto captions
+  Disable haptic feedback
+  Disable layout updates
+  Disable resuming Miniplayer on startup
+  Disable resuming Shorts on startup
+  Disable sign in to TV popup
+  Disable splash animation
+  Enable debug logging
+  Enable gradient loading screen
+  Force player buttons background
+  Fullscreen components
+  GmsCore support
+  Hide action buttons
+  Hide ads
+  Hide comments components
+  Hide feed components
+  Hide feed flyout menu
+  Hide layout components
+  Hide player buttons
+  Hide player flyout menu
+  Hook YouTube Music actions
+  Hook download actions
+  Miniplayer
+  Navigation bar components
+  Open links externally
+  Overlay buttons
+  Player components
+  Reload video
+  Remove background playback restrictions
+  Remove viewer discretion dialog
+  Return YouTube Dislike
+  Return YouTube Username
+  Sanitize sharing links
+  Seekbar components
+  Set transcript cookies
+  Settings for YouTube
+  Shorts components
+  Snack bar components
+  SponsorBlock
+  Spoof app version
+  Signature
+  Spoof watch history
+  Swipe controls
+  Toolbar components
+  Translations for YouTube
+  Video playback
+  Visual preferences icons for YouTube
+  Voice Over Translation
+"""
+patch-args = """
+  -O "Custom Shorts action buttons=Cario"
+  -O "Custom branding icon for YouTube=Yotube Black"
+  -O "Custom branding name for YouTube=Yotube Black"
+  -O "Custom double tap length=3,5,10,15,20,30,60,120,180"
+  -O "Custom header for YouTube=Custom branding icon"
+  -O "Force player buttons background=Default"
+  -O "GmsCore support=ReVanced MicroG,Check GmsCore,Default,Default"
+  -O "Overlay buttons=Rounded,Default"
+  -O "Player components=Swipe to dismiss miniplayer"
+  -O "Settings for YouTube=RVX"
+  -O "Snack bar components=8.0dip,Youtube Dark,Youtube Light,None"
+  -O "Visual preferences icons for YouTube=Custom_branding_icon,true"
+"""
