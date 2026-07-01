@@ -6,8 +6,8 @@ parallel-jobs = 1
 
 [YouTube]
 app-name = "YouTube"
-patches-source = "inotia00/patches"
-cli-source = "inotia00/rvx-cli"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
 rv-brand = "YouTube Black"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
