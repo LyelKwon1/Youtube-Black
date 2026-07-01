@@ -1,5 +1,4 @@
 # Youtube Black
-[![build](https://img.shields.io/github/actions/workflow/status/LyelKwon1/Youtube-Black/build.yml?style=square&label=build)](https://github.com/LyelKwon1/Youtube-Black/actions)
 [![release](https://img.shields.io/github/v/release/LyelKwon1/Youtube-Black?style=square)](https://github.com/LyelKwon1/Youtube-Black/releases)
 [![license](https://img.shields.io/github/license/LyelKwon1/Youtube-Black?style=square)](LICENSE)
 
